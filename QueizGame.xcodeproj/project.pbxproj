@@ -12,6 +12,7 @@
 		041FC6F122D1DAB2008C70DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041FC6EF22D1DAB2008C70DB /* Main.storyboard */; };
 		041FC6F322D1DAB4008C70DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041FC6F222D1DAB4008C70DB /* Assets.xcassets */; };
 		041FC6F622D1DAB4008C70DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041FC6F422D1DAB4008C70DB /* LaunchScreen.storyboard */; };
+		041FC6FE22D1F6DB008C70DB /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FC6FD22D1F6DB008C70DB /* ScoresViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		041FC6F222D1DAB4008C70DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041FC6F522D1DAB4008C70DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041FC6F722D1DAB4008C70DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041FC6FD22D1F6DB008C70DB /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		041FC6EA22D1DAB2008C70DB /* QueizGame */ = {
 			isa = PBXGroup;
 			children = (
+				041FC6FF22D1F736008C70DB /* controllers */,
 				041FC6EB22D1DAB2008C70DB /* AppDelegate.swift */,
-				041FC6ED22D1DAB2008C70DB /* ViewController.swift */,
 				041FC6EF22D1DAB2008C70DB /* Main.storyboard */,
 				041FC6F222D1DAB4008C70DB /* Assets.xcassets */,
 				041FC6F422D1DAB4008C70DB /* LaunchScreen.storyboard */,
 				041FC6F722D1DAB4008C70DB /* Info.plist */,
 			);
 			path = QueizGame;
+			sourceTree = "<group>";
+		};
+		041FC6FF22D1F736008C70DB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				041FC6FD22D1F6DB008C70DB /* ScoresViewController.swift */,
+				041FC6ED22D1DAB2008C70DB /* ViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041FC6EE22D1DAB2008C70DB /* ViewController.swift in Sources */,
+				041FC6FE22D1F6DB008C70DB /* ScoresViewController.swift in Sources */,
 				041FC6EC22D1DAB2008C70DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +300,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = moamen.QueizGame;
+				PRODUCT_BUNDLE_IDENTIFIER = eman.QueizGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = moamen.QueizGame;
+				PRODUCT_BUNDLE_IDENTIFIER = eman.QueizGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
